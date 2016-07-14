@@ -8,6 +8,7 @@ import android.os.Bundle;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
+import com.google.firebase.crash.FirebaseCrash;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
                 .build();
 
         mAdView.loadAd(adRequest);
+
+        FirebaseCrash.report(new Exception("My first Android non-fatal error"));
     }
 
 
