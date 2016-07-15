@@ -63,7 +63,7 @@ public class UVIndex extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
             try {
-                URL url = null;
+                URL url;
                 url = new URL("http://api.owm.io/air/1.0/uvi/current?lat=43&lon=-80");
                 HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
                 try {
