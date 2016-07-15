@@ -14,7 +14,7 @@ public class MainActivity extends Activity {
     }
 
     public void jumpToUVIndex(View view){
-        Intent intent=new Intent(getApplicationContext(),MainActivity.class);
+        Intent intent=new Intent(getApplicationContext(),UVIndex.class);
         startActivity(intent);
     }
 }

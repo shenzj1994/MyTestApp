@@ -35,7 +35,6 @@ public class UVIndex extends AppCompatActivity {
 
         uvText=(TextView)findViewById(R.id.uvIndex);
 
-
         loadAd();
         new retrieveUVIndex().execute();
     }
