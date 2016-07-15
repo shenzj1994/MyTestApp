@@ -10,6 +10,15 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.zhongjieshen.mytestapp.MainActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/ads_below"
+        android:id="@+id/textView"
+        android:layout_above="@+id/adView"
+        android:layout_centerHorizontal="true" />
+
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
         android:layout_width="wrap_content"
@@ -24,10 +33,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/ads_below"
-        android:id="@+id/textView"
-        android:layout_above="@+id/adView"
-        android:layout_centerHorizontal="true" />
+        android:text="Current UV Index:"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="N/A"
+        android:id="@+id/uvIndex"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get"
+        android:id="@+id/button"
+        android:onClick="getUVIndex"
+        android:layout_below="@+id/uvIndex"
+        android:layout_alignParentStart="true" />
 
 
 </RelativeLayout>
