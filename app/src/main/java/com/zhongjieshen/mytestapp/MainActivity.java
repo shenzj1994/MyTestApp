@@ -27,8 +27,6 @@ public class MainActivity extends AppCompatActivity {
                 .build();
 
         mAdView.loadAd(adRequest);
-
-        FirebaseCrash.report(new Exception("My first Android non-fatal error"));
     }
 
 
