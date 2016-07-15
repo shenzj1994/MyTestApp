@@ -25,13 +25,13 @@ import java.net.URL;
 
 
 
-public class MainActivity extends AppCompatActivity {
+public class UVIndex extends AppCompatActivity {
     TextView uvText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.uvindex);
 
         uvText=(TextView)findViewById(R.id.uvIndex);
 
